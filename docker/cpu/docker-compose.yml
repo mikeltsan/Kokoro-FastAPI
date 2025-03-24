@@ -8,6 +8,7 @@ services:
       - ../../api:/app/api
     ports:
       - "8880:8880"
+    user: "0"
     environment:
       - PYTHONPATH=/app:/app/api
       # ONNX Optimization Settings for vectorized operations

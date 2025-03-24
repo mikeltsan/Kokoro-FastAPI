@@ -43,7 +43,7 @@ RUN chmod +x ./entrypoint.sh
 
 # Set environment variables
 ENV PYTHONUNBUFFERED=1 \
-    PYTHONPATH=/app:/app/api \
+    PYTHONPATH=/app \
     PATH="/app/.venv/bin:$PATH" \
     UV_LINK_MODE=copy \
     USE_GPU=false \
